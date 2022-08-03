@@ -1,0 +1,102 @@
+START VERSION CHECK
+	TOOLBOX 2019.0 TO 2016.0
+		\Browser\GOST\Supports\Adjusting supports
+	END TOOLBOX
+	TOOLBOX 2016.0 TO 2012.0
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets
+	END TOOLBOX
+	TOOLBOX 2012.2 TO 2011
+		\Browser\GOST\Bearings_2010
+		\Browser\GOST\Structural Members
+		\Browser\GOST\Bearings
+	END TOOLBOX
+END VERSION CHECK
+
+START CHECK INTEGRITY
+\Browser\GOST\Supports\Adjusting supports
+\Browser\GOST\Ball bearings\ball bearings with broad inner face 9592
+\Browser\GOST\Ball bearings\double-row spherical ball radial bearings 28428
+\Browser\GOST\Ball bearings\single row angular contact ball bearings 8995
+\Browser\GOST\Ball bearings\single row radial ball bearings 8338
+\Browser\GOST\Ball bearings\single row radial sealed ball bearings 8882
+\Browser\GOST\Ball bearings\single-row angular ball bearings 831
+\Browser\GOST\Ball bearings\single-row radial ball bearings 7242
+\Browser\GOST\Ball bearings\thrust ball bearings 7872
+\Browser\GOST\Bolts And Screws\bolts
+\Browser\GOST\Bolts And Screws\screws
+\Browser\GOST\Nuts\hexagon castle nuts accuracy class A
+\Browser\GOST\Nuts\hexagon castle nuts accuracy class B
+\Browser\GOST\Nuts\hexagon nuts accuracy class A
+\Browser\GOST\Nuts\hexagon nuts accuracy class B
+\Browser\GOST\Nuts\hexagon nuts accuracy class C
+\Browser\GOST\Nuts\hexagon slotted nuts accuracy class A
+\Browser\GOST\Nuts\hexagon slotted nuts accuracy class B
+\Browser\GOST\Nuts\special nuts
+\Browser\GOST\Pins\splits
+\Browser\GOST\Retaining rings\External
+\Browser\GOST\Retaining rings\Internal
+\Browser\GOST\Rivet\button-head rivets classes B and C
+\Browser\GOST\Rivet\button-head rivets-high precision
+\Browser\GOST\Rivet\hollow edge-rounded-head rivets
+\Browser\GOST\Rivet\semi-hollow button-head rivets
+\Browser\GOST\Roller bearings\cylindrical roller bearings 5377
+\Browser\GOST\Roller bearings\needle roller bearings 4060
+\Browser\GOST\Roller bearings\radial multiple row roller bearings 7634
+\Browser\GOST\Roller bearings\radial short cylindrical roller bearings 8328
+\Browser\GOST\Roller bearings\single row radial needle-roller bearings 4657
+\Browser\GOST\Roller bearings\single row tepered roller bearings 27365
+\Browser\GOST\Roller bearings\spherical double-row radial roller bearings 24696
+\Browser\GOST\Roller bearings\spherical radial double row roller bearings 5721
+\Browser\GOST\Seal\felt packing rings
+\Browser\GOST\Seal\metal insert rubber seals for rotating
+\Browser\GOST\Seal\rubber rings
+\Browser\GOST\Seal\rubber sealing cups for pneumatic apparatus
+\Browser\GOST\Seal\rubber U-packing seals for hydraulic devices
+\Browser\GOST\Special Bolts And Screws\special bolts
+\Browser\GOST\Special Bolts And Screws\screws with waisted shank
+\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws
+\Browser\GOST\Special Bolts And Screws\set screws
+\Browser\GOST\Special Bolts And Screws\socket head screws
+\Browser\GOST\Special Bolts And Screws\special screws
+\Browser\GOST\Special Bolts And Screws\special bolts
+\Browser\GOST\Stamp\buffers
+\Browser\GOST\Stamp\bushes
+\Browser\GOST\Stamp\caps
+\Browser\GOST\Stamp\cross-bars
+\Browser\GOST\Stamp\handling threaded dowel
+\Browser\GOST\Stamp\holders
+\Browser\GOST\Stamp\puchers
+\Browser\GOST\Stamp\pumps
+\Browser\GOST\Stamp\rings
+\Browser\GOST\Stamp\round punches
+\Browser\GOST\Stamp\shanks
+\Browser\GOST\Stamp\stops
+\Browser\GOST\Stamp\straps
+\Browser\GOST\Stamp\unstuckers
+\Browser\GOST\Stift\stift
+\Browser\GOST\Studs\pins for smooth holes
+\Browser\GOST\Studs\thread pins
+\Browser\GOST\Supports\Adjusting supports
+\Browser\GOST\washers\lock washers
+\Browser\GOST\washers\plain washer
+\Browser\GOST\washers\special washers
+\Browser\GOST\Wood screws\wood screws
+\Browser\GOST\Ball Bearings
+\Browser\GOST\Bolts And Screws
+\Browser\GOST\Supports
+\Browser\GOST\Ball bearings
+\Browser\GOST\Bolts And Screws
+\Browser\GOST\Nuts
+\Browser\GOST\Pins
+\Browser\GOST\Retaining rings
+\Browser\GOST\Rivet
+\Browser\GOST\Roller bearings
+\Browser\GOST\Seal
+\Browser\GOST\Special Bolts And Screws
+\Browser\GOST\Stamp
+\Browser\GOST\Stift
+\Browser\GOST\Studs
+\Browser\GOST\Supports
+\Browser\GOST\washers
+\Browser\GOST\Wood screws
+END CHECK INTEGRITY

@@ -1,0 +1,326 @@
+START VERSION CHECK 2019.1 TO 2019.0
+	START NEW
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7380-1_gost.SLDPRT
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7380-2_gost.SLDPRT
+		\Browser\GOST\washers\plain washer\Washer 7092_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 7093_1_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 7093_2_gost.sldprt
+	END NEW
+END VERSION CHECK
+
+START VERSION CHECK 2019.0 TO 2017.2
+	START NEW
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\Sp Sc 11650_gost.SLDPRT
+		\Browser\GOST\Studs\thread pins\Stud THRD_4n_gost.sldprt
+		\Browser\GOST\Nuts\hexagon castle nuts accuracy class B\Hex Nut 5919_2n_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class B\Hex Nut 5919_1n_gost.sldprt
+	END NEW
+	START DELETED
+		\Browser\GOST\Nuts\hexagon castle nuts accuracy class B\Hex Nut 5919_2_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class B\Hex Nut 5919_1_gost.sldprt
+	END DELETED
+END VERSION CHECK
+
+START VERSION CHECK 2017.2 TO 2017.0
+	START NEW 
+		\Browser\GOST\Retaining rings\External\Circlips 13942An_gost.sldprt
+		\Browser\GOST\Retaining rings\External\Circlips 13942Cn_gost.sldprt
+		\Browser\GOST\Retaining rings\Internal\Circlips 13943Bn_gost.sldprt
+	END NEW
+	START DELETED
+		\Browser\GOST\Retaining rings\External\Circlips 13942A_gost.sldprt
+		\Browser\GOST\Retaining rings\External\Circlips 13942C_gost.sldprt
+		\Browser\GOST\Retaining rings\Internal\Circlips 13943B_gost.sldprt
+	END DELETED
+END VERSION CHECK
+
+START VERSION CHECK 2017.0 TO 2016.0
+	START NEW
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 7805_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 7805_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 7805_3_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14579_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14579_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14579_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14583_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14583_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14583_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17473_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17473_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17473_3_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17475_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17475_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 17475_3_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class A\Hex Nut 5927_1_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class A\Hex Nut 5927_2_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class A\Hex Nut 5927_3_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 7042_gost.sldprt
+		\Browser\GOST\Studs\pins for smooth holes\Stud_1_gost.sldprt
+		\Browser\GOST\Studs\pins for smooth holes\Stud_2_gost.sldprt
+		\Browser\GOST\Studs\pins for smooth holes\Stud_3_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Aluminium 20865_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Aluminium 20866_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Aluminium 20867_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20862_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20863_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20864_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20865_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20866_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Brass 20867_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20862_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20863_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20864_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20865_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20866_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Steel 20867_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Titanium 20866_gost.sldprt
+		\Browser\GOST\Supports\Adjusting supports\Support Titanium 20867_gost.sldprt
+		\Browser\GOST\washers\lock washers\Washer 6402_1_1_gost.sldprt
+		\Browser\GOST\washers\lock washers\Washer 6402_2_1_gost.sldprt
+		\Browser\GOST\washers\lock washers\Washer 6402_3_1_gost.sldprt
+		\Browser\GOST\washers\lock washers\Washer 6402_4_1_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371n_1_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371n_2_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371n_3_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371n_4_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371_1_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371_2_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371_3_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 11371_4_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 10462_1_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10462_2_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10463_1_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10463_2_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10464_1_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10464_2_1_gost.SLDPRT
+	END NEW
+END VERSION CHECK
+
+START VERSION CHECK 2016.0 TO 2015.2
+	START NEW
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 50274_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 50791_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 52644_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 52644_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 52644_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 10642_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14580_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14580_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14580_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14584_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14584_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 14584_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7045_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7045_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7045_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7046_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7046_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7048_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7048_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7048_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 52645_1_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 52645_gost.sldprt
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 15973_gost.sldprt
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 15974_gost.sldprt
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 10509_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 14585_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 14586_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 14587_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 1479_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 1481_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 1482_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 1483_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 7049_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 7050_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\SC GOST 7051_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4026_1_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4026_2_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4026_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4027_1_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4027_2_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4027_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4028_1_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4028_2_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4028_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4029_1_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4029_2_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4029_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4766_1_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4766_2_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\set screws\Sp Sc 4766_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 52854_gost.SLDPRT
+		\Browser\GOST\Stift\stift\Stift 12207n1_gost.SLDPRT
+		\Browser\GOST\washers\plain washer\Washer 28848_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 52646_1_gost.sldprt
+		\Browser\GOST\washers\plain washer\Washer 52646_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 10462_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10462_2_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10463_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10463_2_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10464_1_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 10464_2_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 11872_L_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 11872_N_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 13464_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 13465_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 13466_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 15512_gost.SLDPRT
+		\Browser\GOST\washers\special washers\Washer 17778_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 9060_gost.sldprt
+		\Browser\GOST\Nuts\hexagon castle nuts accuracy class B\Hex Nut 5918_2n_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class A\Hex Nut 5932_1n_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class B\Hex Nut 5918_1n_gost.sldprt
+		\Browser\GOST\Roller bearings\needle roller bearings 4060\Bear 4060_HD_2Dn_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\Sp Sc 10618n_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\Sp Sc 10621n_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 15163n_gost.sldprt
+		\Browser\GOST\Rivet\semi-hollow button-head rivets\Rivet 12641n1 ST_gost.sldprt
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 15163n_gost.sldprt
+	END NEW
+	START DELETED
+		\Browser\GOST\Nuts\hexagon castle nuts accuracy class B\Hex Nut 5918_2_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class A\Hex Nut 5932_1_gost.sldprt
+		\Browser\GOST\Nuts\hexagon slotted nuts accuracy class B\Hex Nut 5918_1_gost.sldprt
+		\Browser\GOST\Rivet\semi-hollow button-head rivets\Rivet 12641n ST_gost.sldprt
+		\Browser\GOST\Roller bearings\needle roller bearings 4060\Bear 4060_HD_2D_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\Sp Sc 10618_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\self-drilling tapping screws\Sp Sc 10621_gost.SLDPRT
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 15163_gost.sldprt
+	END DELETED
+END VERSION CHECK
+
+START VERSION CHECK 2015.2 TO 2015.1
+	START NEW
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 15072_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4016_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4018_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7046_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 10605_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 10607_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 10513_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 12126_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 50272_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 50273_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 7044_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 12943_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 24197_gost.sldprt
+	END NEW
+END VERSION CHECK
+
+START VERSION CHECK 2015.1 TO 2014.4
+	START NEW
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 15072_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4014_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 4016_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\bolts\Hex Bolt 8765_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1207_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 12474_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 1580_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2009_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 2010_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4017_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4018_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 4762_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7046_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 7047_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_1_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_2_gost.sldprt
+		\Browser\GOST\Bolts And Screws\screws\SC GOST 8676_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 10605_gost.sldprt
+		\Browser\GOST\Nuts\hexagon nuts accuracy class B\Hex Nut 10607_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 10513_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 12126_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 50272_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 50273_gost.sldprt
+		\Browser\GOST\Nuts\special nuts\Hex Nut 7044_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 12943_gost.sldprt
+		\Browser\GOST\washers\special washers\Washer 24197_gost.sldprt
+	END NEW
+END VERSION CHECK
+
+START VERSION CHECK 2014.4 TO 2014.3
+	START NEW
+		\Browser\GOST\Stamp\shanks\Stamp 16718n_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18740n_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18743n_1_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18743n_2_gost.sldprt
+	END NEW
+	START DELETED
+		\Browser\GOST\Stamp\shanks\Stamp 16718_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18740_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18743_1_gost.sldprt
+		\Browser\GOST\Stamp\stops\Stamp 18743_2_gost.sldprt
+	END DELETED
+END VERSION CHECK
+
+START VERSION CHECK 2014.3 TO 2013.1
+	START NEW
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 13152n_1_gost.sldprt
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 13152n_2_gost.sldprt
+	END NEW
+	START DELETED
+		\Browser\GOST\Special Bolts And Screws\special bolts\Sp Bolt 13152n
+	END DELETED
+END VERSION CHECK
+
+START VERSION CHECK 2013.1 TO 2012.2
+	START NEW
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 12639n AL_gost.sldprt
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 12639n ST_gost.sldprt
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 12639n1 BR_gost.sldprt
+		\Browser\GOST\Rivet\hollow edge-rounded-head rivets\Rivet 12639n1 CU_gost.sldprt
+	END NEW
+END VERSION CHECK
