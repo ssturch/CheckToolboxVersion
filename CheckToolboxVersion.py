@@ -12,74 +12,74 @@ Module CheckToolboxVersion
         Dim ProgrammDataFolder As String = My.Application.Info.DirectoryPath & "\DataFolder\"
 
 
-        'Получение папки для сохранения результата анализа Toolbox клиента
+        'РџРѕР»СѓС‡РµРЅРёРµ РїР°РїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р° Р°РЅР°Р»РёР·Р° Toolbox РєР»РёРµРЅС‚Р°
 
         Dim ValidPath As Boolean = False
 
         While Not ValidPath
-            Console.WriteLine("Введите папку, куда будет сохраняться SWRLog файл с результатом анализа Toolbox")
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ РїР°РїРєСѓ, РєСѓРґР° Р±СѓРґРµС‚ СЃРѕС…СЂР°РЅСЏС‚СЊСЃСЏ SWRLog С„Р°Р№Р» СЃ СЂРµР·СѓР»СЊС‚Р°С‚РѕРј Р°РЅР°Р»РёР·Р° Toolbox")
             PathToSaveSWRLog = Console.ReadLine()
             If My.Computer.FileSystem.DirectoryExists(PathToSaveSWRLog) = True Then
-                Console.WriteLine("Данная папка существует")
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° СЃСѓС‰РµСЃС‚РІСѓРµС‚")
                 ValidPath = True
             Else
-                Console.WriteLine("Данная папка не существует, проверьте правильность ввода и введите снова")
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚, РїСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІРІРѕРґР° Рё РІРІРµРґРёС‚Рµ СЃРЅРѕРІР°")
 
             End If
         End While
 
         PathToSaveSWRLog = PathToSaveSWRLog & "\CheckToolboxVersion" & ".swrlog"
 
-        'Получение папки для анализа Toolbox клиента
+        'РџРѕР»СѓС‡РµРЅРёРµ РїР°РїРєРё РґР»СЏ Р°РЅР°Р»РёР·Р° Toolbox РєР»РёРµРЅС‚Р°
         ValidPath = False
 
         Dim IsToolboxPath As Boolean = False
 
         While Not ValidPath
-            Console.WriteLine("Введите папку с Toolbox для его анализа")
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ РїР°РїРєСѓ СЃ Toolbox РґР»СЏ РµРіРѕ Р°РЅР°Р»РёР·Р°")
             CustomerToolboxFolder = Console.ReadLine()
             If My.Computer.FileSystem.DirectoryExists(CustomerToolboxFolder) = True Then
-                Console.WriteLine("Данная папка существует")
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° СЃСѓС‰РµСЃС‚РІСѓРµС‚")
                 ValidPath = True
             Else
-                Console.WriteLine("Данная папка не существует, проверьте правильность ввода и введите снова")
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚, РїСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІРІРѕРґР° Рё РІРІРµРґРёС‚Рµ СЃРЅРѕРІР°")
 
             End If
         End While
 
-        'Анализ папки на наличие файлов sldedb или mdb
+        'РђРЅР°Р»РёР· РїР°РїРєРё РЅР° РЅР°Р»РёС‡РёРµ С„Р°Р№Р»РѕРІ sldedb РёР»Рё mdb
 
         While Not IsToolboxPath
             If My.Computer.FileSystem.FileExists(CustomerToolboxFolder & "\lang\English\SWBrowser.mdb") = True Or My.Computer.FileSystem.FileExists(CustomerToolboxFolder & "\lang\English\SWBrowser.sldedb") = True Then
-                Console.WriteLine("Данная папка является папкой Toolbox" & vbCrLf & vbCrLf)
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° СЏРІР»СЏРµС‚СЃСЏ РїР°РїРєРѕР№ Toolbox" & vbCrLf & vbCrLf)
                 IsToolboxPath = True
             Else
-                Console.WriteLine("Данная папка не содержит компоненты Toolbox, проверьте правильность ввода и введите снова")
+                Console.WriteLine("Р”Р°РЅРЅР°СЏ РїР°РїРєР° РЅРµ СЃРѕРґРµСЂР¶РёС‚ РєРѕРјРїРѕРЅРµРЅС‚С‹ Toolbox, РїСЂРѕРІРµСЂСЊС‚Рµ РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІРІРѕРґР° Рё РІРІРµРґРёС‚Рµ СЃРЅРѕРІР°")
             End If
         End While
 
-        'Создание файла лога для записи результатов
+        'РЎРѕР·РґР°РЅРёРµ С„Р°Р№Р»Р° Р»РѕРіР° РґР»СЏ Р·Р°РїРёСЃРё СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
 
-        Console.WriteLine("Создание файла CheckToolboxVersion.swrlog")
-        Console.WriteLine("Анализ:")
+        Console.WriteLine("РЎРѕР·РґР°РЅРёРµ С„Р°Р№Р»Р° CheckToolboxVersion.swrlog")
+        Console.WriteLine("РђРЅР°Р»РёР·:")
 
-        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Результат анализа Toolbox клиента:" & vbCrLf, True)
+        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р РµР·СѓР»СЊС‚Р°С‚ Р°РЅР°Р»РёР·Р° Toolbox РєР»РёРµРЅС‚Р°:" & vbCrLf, True)
 
-        'Проверка, есть ли .sldedb файл
+        'РџСЂРѕРІРµСЂРєР°, РµСЃС‚СЊ Р»Рё .sldedb С„Р°Р№Р»
 
         If My.Computer.FileSystem.FileExists(CustomerToolboxFolder & "\lang\English\SWBrowser.sldedb") = True Then
-            Console.WriteLine("Наличие .sldedb = OK")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие .sldedb = OK" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ .sldedb = OK")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ .sldedb = OK" & vbCrLf, True)
             SLDEDBChk = True
         Else
-            Console.WriteLine("Наличие .sldedb = NO")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие .sldedb = NO" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ .sldedb = NO")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ .sldedb = NO" & vbCrLf, True)
         End If
 
         Call ToolboxVersionDATFilesCheck(CustomerToolboxFolder)
         Call CheckToolboxGOSTFoulderContent(ProgrammDataFolder)
         Call CheckToolboxGOSTFileContent(ProgrammDataFolder)
-        Console.WriteLine("Проверка закончена, файл создан. Изучите полученные данные и нажмите любую кнопку")
+        Console.WriteLine("РџСЂРѕРІРµСЂРєР° Р·Р°РєРѕРЅС‡РµРЅР°, С„Р°Р№Р» СЃРѕР·РґР°РЅ. РР·СѓС‡РёС‚Рµ РїРѕР»СѓС‡РµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ Рё РЅР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєРЅРѕРїРєСѓ")
         Console.ReadLine()
 
     End Sub
@@ -98,8 +98,8 @@ Module CheckToolboxVersion
         Dim FunctRepeat As Boolean = False
         Dim Stream As StreamReader = New StreamReader(ProgrammDataFolder & "\ActualToolboxFolderList.swrinstr")
 
-        Console.WriteLine("==Проверка на соответствии версии Toolbox по папкам:==")
-        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==Проверка на соответствии версии Toolbox по папкам:==" & vbCrLf, True)
+        Console.WriteLine("==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox РїРѕ РїР°РїРєР°Рј:==")
+        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox РїРѕ РїР°РїРєР°Рј:==" & vbCrLf, True)
 
 
 
@@ -112,9 +112,9 @@ Module CheckToolboxVersion
                     Continue Do
                 Case RLine.Contains("TOOLBOX") And StartCheckVersion And ContinueCheck
                     NewCheck = True
-                    'FirstComparedToolboxVer = RLine.Replace(vbTab, "").Remove(FirstComparedToolboxVer.IndexOf("TO")).Replace("TOOLBOX ", "") ПОЧЕМУ ТО НЕ ОТРАБАТЫВАЕТ
-                    'FirstComparedToolboxVer = RLine.Replace(vbTab, "") - данное выражение возвращает значение FIND, как будто полностью заменяет
-                    'Поэтому пришлось городить дикий колхоз
+                    'FirstComparedToolboxVer = RLine.Replace(vbTab, "").Remove(FirstComparedToolboxVer.IndexOf("TO")).Replace("TOOLBOX ", "") РџРћР§Р•РњРЈ РўРћ РќР• РћРўР РђР‘РђРўР«Р’РђР•Рў
+                    'FirstComparedToolboxVer = RLine.Replace(vbTab, "") - РґР°РЅРЅРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ FIND, РєР°Рє Р±СѓРґС‚Рѕ РїРѕР»РЅРѕСЃС‚СЊСЋ Р·Р°РјРµРЅСЏРµС‚
+                    'РџРѕСЌС‚РѕРјСѓ РїСЂРёС€Р»РѕСЃСЊ РіРѕСЂРѕРґРёС‚СЊ РґРёРєРёР№ РєРѕР»С…РѕР·
                     FirstComparedToolboxVer = RLine
                     OlderComparedToolboxVer = RLine
                     FirstComparedToolboxVer = FirstComparedToolboxVer.Replace(vbTab, "").Replace("TOOLBOX ", "")
@@ -153,15 +153,15 @@ Module CheckToolboxVersion
             CustomerFolders.Remove(ActualFolders(i))
         Next
 
-        Console.WriteLine("==Проверка соответствия структуры папок с последней актуальной поставкой:==")
-        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==Проверка соответствия структуры папок с последней актуальной поставкой:==" & vbCrLf, True)
+        Console.WriteLine("==РџСЂРѕРІРµСЂРєР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ РїР°РїРѕРє СЃ РїРѕСЃР»РµРґРЅРµР№ Р°РєС‚СѓР°Р»СЊРЅРѕР№ РїРѕСЃС‚Р°РІРєРѕР№:==")
+        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==РџСЂРѕРІРµСЂРєР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ РїР°РїРѕРє СЃ РїРѕСЃР»РµРґРЅРµР№ Р°РєС‚СѓР°Р»СЊРЅРѕР№ РїРѕСЃС‚Р°РІРєРѕР№:==" & vbCrLf, True)
 
         If CustomerFolders.Count = 0 Then
-            Console.WriteLine("Структура полностью совпадает с поставками Toolbox от SWR")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Структура полностью совпадает с поставками Toolbox от SWR" & vbCrLf, True)
+            Console.WriteLine("РЎС‚СЂСѓРєС‚СѓСЂР° РїРѕР»РЅРѕСЃС‚СЊСЋ СЃРѕРІРїР°РґР°РµС‚ СЃ РїРѕСЃС‚Р°РІРєР°РјРё Toolbox РѕС‚ SWR")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РЎС‚СЂСѓРєС‚СѓСЂР° РїРѕР»РЅРѕСЃС‚СЊСЋ СЃРѕРІРїР°РґР°РµС‚ СЃ РїРѕСЃС‚Р°РІРєР°РјРё Toolbox РѕС‚ SWR" & vbCrLf, True)
         Else
-            Console.WriteLine("Обнаружены папки, не входящие в поставку Toolbox от SWR:")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Обнаружены папки, не входящие в поставку Toolbox от SWR:" & vbCrLf, True)
+            Console.WriteLine("РћР±РЅР°СЂСѓР¶РµРЅС‹ РїР°РїРєРё, РЅРµ РІС…РѕРґСЏС‰РёРµ РІ РїРѕСЃС‚Р°РІРєСѓ Toolbox РѕС‚ SWR:")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РћР±РЅР°СЂСѓР¶РµРЅС‹ РїР°РїРєРё, РЅРµ РІС…РѕРґСЏС‰РёРµ РІ РїРѕСЃС‚Р°РІРєСѓ Toolbox РѕС‚ SWR:" & vbCrLf, True)
             For i = 0 To CustomerFolders.Count - 1
                 Console.WriteLine(CustomerFolders(i))
                 My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, CustomerFolders(i) & vbCrLf, True)
@@ -178,24 +178,24 @@ Module CheckToolboxVersion
 
         If OlderComparedToolboxVer <> "2011" Then
             If FunctRepeat = False Then
-                Console.WriteLine("Предварительная проверка на соответствие с версией от " & FirstComparedToolboxVer & " до " & OlderComparedToolboxVer)
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Предварительная проверка на соответствие с версией от " & FirstComparedToolboxVer & " до " & OlderComparedToolboxVer & vbCrLf, True)
+                Console.WriteLine("РџСЂРµРґРІР°СЂРёС‚РµР»СЊРЅР°СЏ РїСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРµ СЃ РІРµСЂСЃРёРµР№ РѕС‚ " & FirstComparedToolboxVer & " РґРѕ " & OlderComparedToolboxVer)
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РџСЂРµРґРІР°СЂРёС‚РµР»СЊРЅР°СЏ РїСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРµ СЃ РІРµСЂСЃРёРµР№ РѕС‚ " & FirstComparedToolboxVer & " РґРѕ " & OlderComparedToolboxVer & vbCrLf, True)
             End If
             If My.Computer.FileSystem.DirectoryExists(ComparedPath) = True Then
-                Console.WriteLine(Wline.Replace(vbTab, "") & " = ОК")
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = ОК" & vbCrLf, True)
+                Console.WriteLine(Wline.Replace(vbTab, "") & " = РћРљ")
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = РћРљ" & vbCrLf, True)
             Else
                 Console.WriteLine(Wline.Replace(vbTab, "") & " = NO")
                 My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = NO" & vbCrLf, True)
             End If
         Else
             If FunctRepeat = False Then
-                Console.WriteLine("Присутcтвие признаков версии Toolbox старше 2012.2")
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Присутcтвие признаков версии Toolbox старше 2012.2" & vbCrLf, True)
+                Console.WriteLine("РџСЂРёСЃСѓС‚cС‚РІРёРµ РїСЂРёР·РЅР°РєРѕРІ РІРµСЂСЃРёРё Toolbox СЃС‚Р°СЂС€Рµ 2012.2")
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РџСЂРёСЃСѓС‚cС‚РІРёРµ РїСЂРёР·РЅР°РєРѕРІ РІРµСЂСЃРёРё Toolbox СЃС‚Р°СЂС€Рµ 2012.2" & vbCrLf, True)
             End If
             If My.Computer.FileSystem.DirectoryExists(ComparedPath) = True Then
-                Console.WriteLine(Wline.Replace(vbTab, "") & " = ОК")
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = ОК" & vbCrLf, True)
+                Console.WriteLine(Wline.Replace(vbTab, "") & " = РћРљ")
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = РћРљ" & vbCrLf, True)
             Else
                 Console.WriteLine(Wline.Replace(vbTab, "") & " = NO")
                 My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, Wline & " = NO" & vbCrLf, True)
@@ -222,20 +222,20 @@ Module CheckToolboxVersion
                 Case WLine.Contains("START VERSION CHECK")
                     StartCheck = True
                     ToolboxVersion = WLine.Remove(WLine.IndexOf("TO")).Replace("START VERSION CHECK ", "")
-                    Console.WriteLine("  ==Проверка на соответствии версии Toolbox " & ToolboxVersion & ":==  ")
-                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "  ==Проверка на соответствии версии Toolbox " & ToolboxVersion & ":==  " & vbCrLf, True)
+                    Console.WriteLine("  ==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox " & ToolboxVersion & ":==  ")
+                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "  ==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox " & ToolboxVersion & ":==  " & vbCrLf, True)
                     Continue Do
                 Case WLine.Contains("START NEW") And StartCheck
-                    Console.WriteLine("Новые файлы, добавленные в этой версии:")
-                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Новые файлы, добавленные в этой версии:" & vbCrLf, True)
+                    Console.WriteLine("РќРѕРІС‹Рµ С„Р°Р№Р»С‹, РґРѕР±Р°РІР»РµРЅРЅС‹Рµ РІ СЌС‚РѕР№ РІРµСЂСЃРёРё:")
+                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќРѕРІС‹Рµ С„Р°Р№Р»С‹, РґРѕР±Р°РІР»РµРЅРЅС‹Рµ РІ СЌС‚РѕР№ РІРµСЂСЃРёРё:" & vbCrLf, True)
                     StartInstrNEW = True
                     Continue Do
                 Case WLine.Contains("END NEW")
                     StartInstrNEW = False
                     Continue Do
                 Case WLine.Contains("START DELETED") And StartCheck
-                    Console.WriteLine("Неактуальные мастер модели:")
-                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Неактуальные мастер модели:" & vbCrLf, True)
+                    Console.WriteLine("РќРµР°РєС‚СѓР°Р»СЊРЅС‹Рµ РјР°СЃС‚РµСЂ РјРѕРґРµР»Рё:")
+                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќРµР°РєС‚СѓР°Р»СЊРЅС‹Рµ РјР°СЃС‚РµСЂ РјРѕРґРµР»Рё:" & vbCrLf, True)
                     StartInstrDEL = True
                     Continue Do
                 Case WLine.Contains("END DELETED")
@@ -282,10 +282,10 @@ Module CheckToolboxVersion
 
             If OtherFilePath.Count > 0 Then
                 OtherFilePathText = String.Join(vbCrLf, OtherFilePath)
-                Console.WriteLine("В базе содержатся копии " & ComparedFilename & " в папках:")
+                Console.WriteLine("Р’ Р±Р°Р·Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РєРѕРїРёРё " & ComparedFilename & " РІ РїР°РїРєР°С…:")
                 Console.WriteLine(OtherFilePathText)
 
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "В базе содержатся копии " & ComparedFilename & " в папках:" & vbCrLf, True)
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р’ Р±Р°Р·Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РєРѕРїРёРё " & ComparedFilename & " РІ РїР°РїРєР°С…:" & vbCrLf, True)
                 My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, OtherFilePathText & vbCrLf, True)
 
             End If
@@ -301,8 +301,8 @@ Module CheckToolboxVersion
                 CmprFileCheckFolder = Nothing
             Else
                 If CmprFileCheckFolder <> ComparedPath Then
-                    Console.WriteLine("Файл " & ComparedFilename & " был перемещен в папку " & CmprFileCheckFolder)
-                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Файл " & ComparedFilename & " был перемещен в папку " & CmprFileCheckFolder & vbCrLf, True)
+                    Console.WriteLine("Р¤Р°Р№Р» " & ComparedFilename & " Р±С‹Р» РїРµСЂРµРјРµС‰РµРЅ РІ РїР°РїРєСѓ " & CmprFileCheckFolder)
+                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р¤Р°Р№Р» " & ComparedFilename & " Р±С‹Р» РїРµСЂРµРјРµС‰РµРЅ РІ РїР°РїРєСѓ " & CmprFileCheckFolder & vbCrLf, True)
                 End If
 
             End If
@@ -341,10 +341,10 @@ Module CheckToolboxVersion
 
             If OtherFilePath.Count > 0 Then
                 OtherFilePathText = String.Join(vbCrLf, OtherFilePath)
-                Console.WriteLine("В базе содержатся копии " & ComparedFilename & " в папках:")
+                Console.WriteLine("Р’ Р±Р°Р·Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РєРѕРїРёРё " & ComparedFilename & " РІ РїР°РїРєР°С…:")
                 Console.WriteLine(OtherFilePathText)
 
-                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "В базе содержатся копии " & ComparedFilename & " в папках:" & vbCrLf, True)
+                My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р’ Р±Р°Р·Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РєРѕРїРёРё " & ComparedFilename & " РІ РїР°РїРєР°С…:" & vbCrLf, True)
                 My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, OtherFilePathText & vbCrLf, True)
 
             End If
@@ -360,8 +360,8 @@ Module CheckToolboxVersion
                 CmprFileCheckFolder = Nothing
             Else
                 If CmprFileCheckFolder <> ComparedPath Then
-                    Console.WriteLine("Файл " & ComparedFilename & " был перемещен в папку " & CmprFileCheckFolder)
-                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Файл " & ComparedFilename & " был перемещен в папку " & CmprFileCheckFolder & vbCrLf, True)
+                    Console.WriteLine("Р¤Р°Р№Р» " & ComparedFilename & " Р±С‹Р» РїРµСЂРµРјРµС‰РµРЅ РІ РїР°РїРєСѓ " & CmprFileCheckFolder)
+                    My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р¤Р°Р№Р» " & ComparedFilename & " Р±С‹Р» РїРµСЂРµРјРµС‰РµРЅ РІ РїР°РїРєСѓ " & CmprFileCheckFolder & vbCrLf, True)
                 End If
 
             End If
@@ -378,29 +378,29 @@ Module CheckToolboxVersion
         Dim ToolboxVersionTxtArr() As String
         Dim ToolboxVersion_GOSTTxtArr() As String
 
-        Console.WriteLine("==Проверка на соответствии версии Toolbox по файлам ToolboxVersion.dat и ToolboxVersion_GOST.dat:==")
-        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==Проверка на соответствии версии Toolbox по файлам ToolboxVersion.dat и ToolboxVersion_GOST.dat:==" & vbCrLf, True)
+        Console.WriteLine("==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox РїРѕ С„Р°Р№Р»Р°Рј ToolboxVersion.dat Рё ToolboxVersion_GOST.dat:==")
+        My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "==РџСЂРѕРІРµСЂРєР° РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё РІРµСЂСЃРёРё Toolbox РїРѕ С„Р°Р№Р»Р°Рј ToolboxVersion.dat Рё ToolboxVersion_GOST.dat:==" & vbCrLf, True)
 
         If My.Computer.FileSystem.FileExists(CustomerToolboxFolder & "\ToolboxVersion.dat") = True Then
-            Console.WriteLine("Наличие файла ToolboxVersion.dat = OK")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие файла ToolboxVersion.dat = OK" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion.dat = OK")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion.dat = OK" & vbCrLf, True)
             ToolboxVersionTxtArr = Split(My.Computer.FileSystem.ReadAllText(CustomerToolboxFolder & "\ToolboxVersion.dat"), vbCrLf)
-            Console.WriteLine("Версия оригинальной поставки - " & ToolboxVersionTxtArr(1))
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Версия оригинальной поставки - " & Replace(ToolboxVersionTxtArr(1), "// ", "") & vbCrLf, True)
+            Console.WriteLine("Р’РµСЂСЃРёСЏ РѕСЂРёРіРёРЅР°Р»СЊРЅРѕР№ РїРѕСЃС‚Р°РІРєРё - " & ToolboxVersionTxtArr(1))
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р’РµСЂСЃРёСЏ РѕСЂРёРіРёРЅР°Р»СЊРЅРѕР№ РїРѕСЃС‚Р°РІРєРё - " & Replace(ToolboxVersionTxtArr(1), "// ", "") & vbCrLf, True)
         Else
-            Console.WriteLine("Наличие файла ToolboxVersion.dat = NO")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие файла ToolboxVersion.dat = NO" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion.dat = NO")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion.dat = NO" & vbCrLf, True)
         End If
 
         If My.Computer.FileSystem.FileExists(CustomerToolboxFolder & "\ToolboxVersion_GOST.dat") = True Then
-            Console.WriteLine("Наличие файла ToolboxVersion_GOST.dat = OK")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие файла ToolboxVersion_GOST.dat = OK" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion_GOST.dat = OK")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion_GOST.dat = OK" & vbCrLf, True)
             ToolboxVersion_GOSTTxtArr = Split(My.Computer.FileSystem.ReadAllText(CustomerToolboxFolder & "\ToolboxVersion_GOST.dat"), vbCrLf)
-            Console.WriteLine("Версия оригинальной поставки - " & ToolboxVersion_GOSTTxtArr(1))
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Версия поставки от SWR - " & Replace(ToolboxVersion_GOSTTxtArr(1), "// ", "") & vbCrLf, True)
+            Console.WriteLine("Р’РµСЂСЃРёСЏ РѕСЂРёРіРёРЅР°Р»СЊРЅРѕР№ РїРѕСЃС‚Р°РІРєРё - " & ToolboxVersion_GOSTTxtArr(1))
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Р’РµСЂСЃРёСЏ РїРѕСЃС‚Р°РІРєРё РѕС‚ SWR - " & Replace(ToolboxVersion_GOSTTxtArr(1), "// ", "") & vbCrLf, True)
         Else
-            Console.WriteLine("Наличие файла ToolboxVersion_GOST.dat = NO")
-            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "Наличие файла ToolboxVersion_GOST.dat = NO" & vbCrLf, True)
+            Console.WriteLine("РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion_GOST.dat = NO")
+            My.Computer.FileSystem.WriteAllText(PathToSaveSWRlog, "РќР°Р»РёС‡РёРµ С„Р°Р№Р»Р° ToolboxVersion_GOST.dat = NO" & vbCrLf, True)
         End If
 
     End Function
